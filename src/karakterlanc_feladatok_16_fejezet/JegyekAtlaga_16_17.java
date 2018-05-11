@@ -15,7 +15,7 @@ import java.util.*;
 
 public class JegyekAtlaga_16_17 {
 
-	static String allomany = "Kis István Miklós:*:*:2 5 1 1 1 3*Horváth Péter János:4 5 3 2 4 5 5 2*Jánvári Gabika:4 5 5 5 5 4"; // Adatok,
+	static String allomany = "Kis István Lajos:*:*:2 5 1 1 1 3*Horváth Péter János:4 5 3 2 4 5 5 2*Jánvári Gabika:4 5 5 5 5 4"; // Adatok,
 	                                                                                                                                // amit
 	                                                                                                                                // minden
 	                                                                                                                                // metódus
