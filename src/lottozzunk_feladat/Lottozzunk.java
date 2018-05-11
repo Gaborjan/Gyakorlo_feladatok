@@ -18,7 +18,7 @@ public class Lottozzunk {
 		int egytipp;
 		boolean helyestipp=true;
 		int jatektipus=0;
-		Scanner beolvas = new Scanner(System.in);
+		//Scanner beolvas = new Scanner(System.in);
 		System.out.println("Ez a program az ötös lottó sorsolást szimulálja, véletlenszerű sorsolásokat");
 		System.out.println("végez. Bekéri hány sorsolást végezzen, majd a tippeket, 1-90 közötti ");
 		System.out.println("számokat. A végén kiírja hány nyeretlen sorsolás (0 vagy 1 eltalált szám),"); 
@@ -50,7 +50,7 @@ public class Lottozzunk {
 						talalat[i]=0;
 					System.out.print("Add meg hány sorsolást szeretnél (max.: 2 milliárd): ");
 					do { //Ciklus, amíg helyes sorsolás darabszámot nem ad meg.
-						sorsolasdb = beolvas.nextInt();
+						sorsolasdb = Console.readInt();
 						if (sorsolasdb<1 || sorsolasdb>2000000000) 
 						System.out.println("Legalább 1 db, maximum 2 milliárd db sorsolás lehet!");
 					} while (sorsolasdb<1 || sorsolasdb>2000000000);
@@ -60,7 +60,7 @@ public class Lottozzunk {
 							do { //Ciklus, amíg helyes tippet nem kapunk, 1-45/90 között 
 								if (jatektipus==5) System.out.print("Kérem a(z) "+(i+1)+". tippet (1-90): ");
 								else System.out.print("Kérem a(z) "+(i+1)+". tippet (1-45): ");
-								egytipp = beolvas.nextInt();
+								egytipp = Console.readInt();
 								if (jatektipus==5) helyestipp=egytipp<=90 && egytipp>=1; 
 								else helyestipp=egytipp<=45 && egytipp>=1; 
 								if (!helyestipp && jatektipus==5) 
@@ -91,7 +91,7 @@ public class Lottozzunk {
 															(sorsoltszam==sorsolas[3]) || (sorsoltszam==sorsolas[4]));
 								else voltmar=((sorsoltszam==sorsolas[0]) || (sorsoltszam==sorsolas[1]) || (sorsoltszam==sorsolas[2]) || (sorsoltszam==sorsolas[3]) ||
 											(sorsoltszam==sorsolas[4]) || (sorsoltszam==sorsolas[5]));
-							} while (voltmar); //Akkor lépünk KI a ciklusból, ha feltétel HAMISS�? válik!
+							} while (voltmar); //Akkor lépünk KI a ciklusból, ha feltétel HAMISS�? válik!
 							sorsolas[j]=sorsoltszam;
 						} //for, egy sorsolás számainak előállítása
 						// összehasonlítjuk a sorsolás eredményeit a tippekkel
@@ -125,7 +125,7 @@ public class Lottozzunk {
 		} //if Ha a valasz 1 vagy 2, vagyis választ az ötös és hatos lottó közül.
 	} //while, amíg nem kilépést választ a menüből.
 	System.out.println("Program vége.");
-	beolvas.close();
+	//beolvas.close();
 	} //main
 } //class
  
