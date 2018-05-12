@@ -1,30 +1,30 @@
 package karakterlanc_feladatok_16_fejezet;
 
-/*Kérjen be egy szöveget, majd cserélje le benne az összes ékezetes betût ékezet nélkülire*/
+/*KÃ©rjen be egy szÃ¶veget, majd cserÃ©lje le benne az Ã¶sszes Ã©kezetes betÅ±t Ã©kezet nÃ©lkÃ¼lire*/
 import extra.*;
 public class Ekezetcsere_16_4 {
 
 	static char betuCsere(char betu) {
 		char eredmeny=' ';
 		switch (betu) {
-			case 'á':eredmeny='a'; break;
-			case 'é':eredmeny='e'; break;
-			case 'í':eredmeny='i'; break;
-			case 'ó':eredmeny='o'; break;
-			case 'ö':eredmeny='o'; break;
-			case 'õ':eredmeny='o'; break;
-			case 'ú':eredmeny='u'; break;
-			case 'ü':eredmeny='u'; break;
-			case 'û':eredmeny='u'; break;
-			case 'Á':eredmeny='A'; break;
-			case 'É':eredmeny='E'; break;
-			case 'Í':eredmeny='I'; break;
-			case 'Ó':eredmeny='O'; break;
-			case 'Ö':eredmeny='O'; break;
-			case 'Õ':eredmeny='O'; break;
-			case 'Ú':eredmeny='U'; break;
-			case 'Ü':eredmeny='U'; break;
-			case 'Û':eredmeny='U'; break;
+			case 'Ã¡':eredmeny='a'; break;
+			case 'Ã©':eredmeny='e'; break;
+			case 'Ã­':eredmeny='i'; break;
+			case 'Ã³':eredmeny='o'; break;
+			case 'Ã¶':eredmeny='o'; break;
+			case 'Å‘':eredmeny='o'; break;
+			case 'Ãº':eredmeny='u'; break;
+			case 'Ã¼':eredmeny='u'; break;
+			case 'Å±':eredmeny='u'; break;
+			case 'Ã':eredmeny='A'; break;
+			case 'Ã‰':eredmeny='E'; break;
+			case 'Ã':eredmeny='I'; break;
+			case 'Ã“':eredmeny='O'; break;
+			case 'Ã–':eredmeny='O'; break;
+			case 'Å':eredmeny='O'; break;
+			case 'Ãš':eredmeny='U'; break;
+			case 'Ãœ':eredmeny='U'; break;
+			case 'Å°':eredmeny='U'; break;
 			default: eredmeny=betu;
 		}
 		return eredmeny;
@@ -38,8 +38,8 @@ public class Ekezetcsere_16_4 {
 	}
 	public static void main(String[] args) {
 		String atalakintando;
-		System.out.println("Egy megadott magyar nyelvû szövegben minden ékezetes karaktert ékezet nélkülire cserélek!");
-		atalakintando=Console.readLine("Írja be az átalakítandó szöveget:");
+		System.out.println("Egy megadott magyar nyelvÅ± szÃ¶vegben minden Ã©kezetes karaktert Ã©kezet nÃ©lkÃ¼lire cserÃ©lek!");
+		atalakintando=Console.readLine("Ãrja be az Ã¡talakÃ­tandÃ³ szÃ¶veget:");
 		System.out.println(ekezetekCsere(atalakintando));
 	}
 
