@@ -50,6 +50,28 @@ public class Lista_proba_1 {
 		nevlista.addAll(0,Arrays.asList(nevek));
 		System.out.println("Nevek tömbbõl létrehozott lista + új nevek beszúrva az elejére: "+nevlista);
 		System.out.println("Ezt is megszûrjük, csak azokat hagyjuk meg, amiben szerepel az \"or\" szótag: "+szuro(nevlista,"or"));
+		
+		TreeMap<Integer, ArrayList<String>> filmek = new TreeMap<Integer, ArrayList<String>>();
+		filmek.put(1,new ArrayList<String>());
+		filmek.put(3,new ArrayList<String>());
+		filmek.put(2,new ArrayList<String>());
+		filmek.put(5,new ArrayList<String>());
+		filmek.put(4,new ArrayList<String>());
+		filmek.get(1).add("Vissza a jövõbe I.");
+		filmek.get(2).add("Vissza a jövõbe II.");
+		filmek.get(3).add("Vissza a jövõbe III.");
+		filmek.get(4).add("Nyolcadik utas a halál");
+		filmek.get(4).add("A bolygó neve : halál");
+		filmek.get(5).add("Csillagok háborúja");
+		filmek.get(5).add("A birodalom visszavág");
+		filmek.get(5).add("A Jedi visszatér");
+		for (Map.Entry<Integer, ArrayList<String>> egyfilm : filmek.entrySet()) {
+			System.out.print(egyfilm.getKey()+" : ");
+				System.out.println(egyfilm.getValue());
+			
+		}
+		
+		
 	
 } //main
 	
