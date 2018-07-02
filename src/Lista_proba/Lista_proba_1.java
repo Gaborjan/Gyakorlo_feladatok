@@ -1,5 +1,7 @@
 package Lista_proba;
 
+import java.text.Collator;
+import java.text.RuleBasedCollator;
 import java.util.*;
 
 public class Lista_proba_1 {
@@ -19,11 +21,20 @@ public class Lista_proba_1 {
       {"How are you?", "How you doing?","Joe", "Mike"}));*/
 		
 		//Tömbbõl Array list létrehozása
-		String[] nevek = {"Tibor ", "Gábor ", "Péter "};
+	   RuleBasedCollator myCollator = (RuleBasedCollator) Collator.getInstance(new Locale("hu", "HU"));
+	   String[] nevek = {"Tibor ", "Gábor ", "Péter ","Ádám","Mátyás","Gabriella","Gáspár","Éva","Ákos","Ábel","Ödön","Örs"};
 		ArrayList<String> nevlista = new ArrayList<String>(Arrays.asList(nevek));
 		
-		ArrayList<String> list = new ArrayList<String> ();
+		ArrayList<String> list = new ArrayList<String>();
 		ArrayList<String> filtered_list = new ArrayList<String> ();
+		
+		for (String e : nevek)
+		   list.add(e);
+		
+		Collections.sort(list,myCollator);
+		for (String e : list)
+		   System.out.println(e.toString());
+		
 		
 		TreeSet<Integer> nyeroszamok = new TreeSet<Integer>();
 		nyeroszamok.add(2);
