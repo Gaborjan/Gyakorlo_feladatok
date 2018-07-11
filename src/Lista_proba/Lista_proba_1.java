@@ -3,6 +3,8 @@ package Lista_proba;
 import java.text.Collator;
 import java.text.RuleBasedCollator;
 import java.util.*;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class Lista_proba_1 {
 
@@ -79,11 +81,8 @@ public class Lista_proba_1 {
 		for (Map.Entry<Integer, ArrayList<String>> egyfilm : filmek.entrySet()) {
 			System.out.print(egyfilm.getKey()+" : ");
 				System.out.println(egyfilm.getValue());
-			
-		}
-		
-		
-	
+		} //for
+		runAlgorithm();
 } //main
 	
 	static ArrayList<String> szuro(ArrayList<String> belista, String filter) {
@@ -94,5 +93,16 @@ public class Lista_proba_1 {
 			}	
 		return seged;
 	}
+	
+	public static void runAlgorithm()
+	       {
+	          int size = 100;
+	          List<Integer> list = new Random().ints().map(i -> Math.abs((i % 90)+1)).limit(size)
+	                .boxed().collect(Collectors.toList());
+	          Collections.sort(list);
+	          System.out.println(list);
+	        
+	       }
+
 	
 } //class Lista_proba1
