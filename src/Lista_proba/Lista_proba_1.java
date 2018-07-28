@@ -22,9 +22,9 @@ public class Lista_proba_1 {
 		/*List<String> list = new ArrayList<String>(Arrays.asList(new String[] 
       {"How are you?", "How you doing?","Joe", "Mike"}));*/
 		
-		//Tömbbõl Array list létrehozása
+		//Tï¿½mbbï¿½l Array list lï¿½trehozï¿½sa
 	   RuleBasedCollator myCollator = (RuleBasedCollator) Collator.getInstance(new Locale("hu", "HU"));
-	   String[] nevek = {"Tibor ", "Gábor ", "Péter ","Ádám","Mátyás","Gabriella","Gáspár","Éva","Ákos","Ábel","Ödön","Örs"};
+	   String[] nevek = {"Tibor ", "GÃ¡bor ", "PÃ©ter ","ÃdÃ¡m","MÃ¡tyÃ¡s","Gabriella","GÃ¡spÃ¡r","Ã‰va","Ãkos","Ãbel","Ã–dÃ¶n","Ã–rs"};
 		ArrayList<String> nevlista = new ArrayList<String>(Arrays.asList(nevek));
 		
 		ArrayList<String> list = new ArrayList<String>();
@@ -44,9 +44,9 @@ public class Lista_proba_1 {
 		nyeroszamok.add(1);
 		nyeroszamok.add(3);
 		nyeroszamok.add(5);
-		System.out.println("Nyerõszámok (TreeSet): "+nyeroszamok);
+		System.out.println("NyerÅ‘szÃ¡mok (TreeSet): "+nyeroszamok);
 		ArrayList<Integer> szamoktomb = new ArrayList<Integer>(nyeroszamok);
-		System.out.println("Nyerõszámok: (Tömb): "+Arrays.asList(szamoktomb));
+		System.out.println("NyerÅ‘szÃ¡mok: (TÃ¶mb): "+Arrays.asList(szamoktomb));
 		System.out.println();
 		
 		list.add("How are you?");
@@ -58,11 +58,11 @@ public class Lista_proba_1 {
 		System.out.println("Original list: " + list);
 		System.out.println("Filtered list: " + filtered_list);
 		nevek[0]="Hunor";
-		nevek[1]="Jónás";
+		nevek[1]="JÃ³nÃ¡s";
 		nevek[2]="Gizella";
 		nevlista.addAll(0,Arrays.asList(nevek));
-		System.out.println("Nevek tömbbõl létrehozott lista + új nevek beszúrva az elejére: "+nevlista);
-		System.out.println("Ezt is megszûrjük, csak azokat hagyjuk meg, amiben szerepel az \"or\" szótag: "+szuro(nevlista,"or"));
+		System.out.println("Nevek tÃ¶mbbÅ‘l lÃ©trehozott lista + Ãºj nevek beszÃºrva az elejÃ©re: "+nevlista);
+		System.out.println("Ezt is megszÅ±rjÅ±k, csak azokat hagyjuk meg, amiben szerepel az \"or\" szÃ³tag: "+szuro(nevlista,"or"));
 		
 		TreeMap<Integer, ArrayList<String>> filmek = new TreeMap<Integer, ArrayList<String>>();
 		filmek.put(1,new ArrayList<String>());
@@ -70,14 +70,14 @@ public class Lista_proba_1 {
 		filmek.put(2,new ArrayList<String>());
 		filmek.put(5,new ArrayList<String>());
 		filmek.put(4,new ArrayList<String>());
-		filmek.get(1).add("Vissza a jövõbe I.");
-		filmek.get(2).add("Vissza a jövõbe II.");
-		filmek.get(3).add("Vissza a jövõbe III.");
-		filmek.get(4).add("Nyolcadik utas a halál");
-		filmek.get(4).add("A bolygó neve : halál");
-		filmek.get(5).add("Csillagok háborúja");
-		filmek.get(5).add("A birodalom visszavág");
-		filmek.get(5).add("A Jedi visszatér");
+		filmek.get(1).add("Vissza a jÃ¶vÅ‘be I.");
+		filmek.get(2).add("Vissza a jÃ¶vÅ‘be II.");
+		filmek.get(3).add("Vissza a jÃ¶vÅ‘be III.");
+		filmek.get(4).add("Nyolcadik utas a halÃ¡l");
+		filmek.get(4).add("A bolygÃ³ neve : halÃ¡l");
+		filmek.get(5).add("Csillagok hÃ¡borÃºja");
+		filmek.get(5).add("A birodalom visszavÃ¡g");
+		filmek.get(5).add("A Jedi visszatÃ©r");
 		for (Map.Entry<Integer, ArrayList<String>> egyfilm : filmek.entrySet()) {
 			System.out.print(egyfilm.getKey()+" : ");
 				System.out.println(egyfilm.getValue());

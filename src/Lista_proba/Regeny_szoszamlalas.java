@@ -40,7 +40,7 @@ class Szodb implements Comparable<Object> {
   }
 
   public String toString() {
-     return String.format("[%-40s] szó %,6d alkalommal szerepel. \n",this.szo,this.darab);
+     return String.format("[%-40s] szÃ³ %,6d alkalommal szerepel. \n",this.szo,this.darab);
   }
 
 }
@@ -49,7 +49,7 @@ class Szodb implements Comparable<Object> {
 public class Regeny_szoszamlalas 
 {
 	final static int elsoN = 200; 
-	final static int minHossz =10; // Az ennél rövidebb szavakat nem vesszük figyelembe 
+	final static int minHossz =10; // Az ennÃ©l rÃ¶videbb szavakat nem vesszÃ¼k figyelembe 
    
    public static void main(String[] args) 
    {
@@ -71,7 +71,7 @@ public class Regeny_szoszamlalas
         Iterator<String> iter = words.iterator();
         for  (int i=1; i<=200 && iter.hasNext(); i++)
            System.out.println(iter.next());
-        System.out.println(words.size()+ " darab különbözõ szó.");
+        System.out.println(words.size()+ " darab kï¿½lï¿½nbï¿½zï¿½ szï¿½.");
      	}*/
    	{
       while (in.hasNext()) {
@@ -94,8 +94,8 @@ public class Regeny_szoszamlalas
        		elso10.addAll(statisztika.subList(0, statisztika.size()));
        		listaHossz=statisztika.size();
        	}
-       System.out.println("Az elsõ "+listaHossz+" leggyakoribb szó elõfordulás szerint rendezve, mellette az elõfordulások száma. ");
-       System.out.println("A(z) " + minHossz + " betûnél rövidebb szavakat nem vettük figyelembe.");
+       System.out.println("Az elsÅ‘ "+listaHossz+" leggyakoribb szÃ³ elÅ‘fordulÃ¡s szerint rendezve, mellette az elÅ‘fordulÃ¡sok szÃ¡ma. ");
+       System.out.println("A(z) " + minHossz + " betÅ±nÃ©l rÃ¶videbb szavakat nem vettÃ¼k figyelembe.");
        System.out.println();
        elso10.forEach((Szodb e) -> {
           System.out.print(e);
@@ -112,16 +112,16 @@ public class Regeny_szoszamlalas
        
        Collections.sort(elso10, hosszSorrend);
        System.out.println();
-       System.out.println("Az elsõ "+listaHossz+" leggyakoribb szó hossz szerint rendezve, mellette az elõfordulások száma.");
-       System.out.println("A(z) " + minHossz + " betûnél rövidebb szavakat nem vettük figyelembe.");
+       System.out.println("Az elsÅ‘ "+listaHossz+" leggyakoribb szÃ³ hossz szerint rendezve, mellette az elÅ‘fordulÃ¡sok szÃ¡ma.");
+       System.out.println("A(z) " + minHossz + " betÅ±nÃ©l rÃ¶videbb szavakat nem vettÃ¼k figyelembe.");
        System.out.println();
        elso10.forEach((Szodb e) -> {
           System.out.print(e);
        });
-       System.out.printf("%,6d féle különbözõ szó.",statisztika.size());
+       System.out.printf("%,6d fÃ©le kÃ¼lÃ¶nbÃ¶zÅ‘ szÃ³.",statisztika.size());
      }
      catch (IOException e) {
-        System.out.println("Hiba történt fájlmûvelet közben!");
+        System.out.println("Hiba tÃ¶rtÃ©nt fÃ¡jlmÅ±velet kÃ¶zben!");
      }
    }
 }
