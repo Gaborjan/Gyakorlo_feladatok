@@ -8,7 +8,6 @@ package iteracios_feladatok_14_fejezet;
  * akkor legyen v�ge, ha a bevitel v�zszintes koordin�t�n�l a * karaktert �tik be!
  */
 import extra.*;
-
 public class Buzaszemek {
 	public static void main(String[] args) {
 		double buzaSzem;
@@ -28,9 +27,18 @@ public class Buzaszemek {
 			System.out.printf("%,20.0f\n",buzaSzem);
 			}
 		}
+<<<<<<< HEAD
 		
 		System.out.println("Program v�ge!");
 		
 				
 	}
 } 
+=======
+		System.out.println("Program v�ge!");
+		
+			
+		
+		}
+}
+>>>>>>> branch 'master' of https://github.com/Gaborjan/Gyakorlo_feladatok.git
