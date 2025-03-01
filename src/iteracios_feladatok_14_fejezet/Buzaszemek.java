@@ -8,8 +8,6 @@ package iteracios_feladatok_14_fejezet;
  * akkor legyen v�ge, ha a bevitel v�zszintes koordin�t�n�l a * karaktert �tik be!
  */
 import extra.*;
-
-
 public class Buzaszemek {
 	public static void main(String[] args) {
 		double buzaSzem;
