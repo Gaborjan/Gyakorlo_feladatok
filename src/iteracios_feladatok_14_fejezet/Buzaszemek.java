@@ -28,6 +28,7 @@ public class Buzaszemek {
 			System.out.printf("%,20.0f\n",buzaSzem);
 			}
 		}
+		
 		System.out.println("Program v�ge!");
 		
 		
