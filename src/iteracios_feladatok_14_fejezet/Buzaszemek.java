@@ -1,11 +1,11 @@
 package iteracios_feladatok_14_fejezet;
 
-/*Sheran hindu király meg akarta jutalmazni a sakkjáték feltalálóját, és rábízta, hogy õ maga válassza meg a jutalmát. A bölcs
- * ember így válaszolt: A sakktábla elsõ mezõjéért csak egy búzaszemet adj uram!  A másodikért 2-t, a harmadikért 4-et, stb.
- * minden mezõért kétszer annyit, mint az elõzõért. Számoljunk utána, mennyi is volt pontosan a jutalom?
- * A sakktábla vízszintes koordinátái: A..H, függõleges koordinátái: 1..8.
- * Ciklusban kérjük be a felhasználótól milyen koordinátára kíváncsi, és minden esetben írjuk ki az eredményt! A programnak
- * akkor legyen vége, ha a bevitel vízszintes koordinátánál a * karaktert ütik be!
+/*Sheran hindu kirï¿½ly meg akarta jutalmazni a sakkjï¿½tï¿½k feltalï¿½lï¿½jï¿½t, ï¿½s rï¿½bï¿½zta, hogy ï¿½ maga vï¿½lassza meg a jutalmï¿½t. A bï¿½lcs
+ * ember ï¿½gy vï¿½laszolt: A sakktï¿½bla elsï¿½ mezï¿½jï¿½ï¿½rt csak egy bï¿½zaszemet adj uram!  A mï¿½sodikï¿½rt 2-t, a harmadikï¿½rt 4-et, stb.
+ * minden mezï¿½ï¿½rt kï¿½tszer annyit, mint az elï¿½zï¿½ï¿½rt. Szï¿½moljunk utï¿½na, mennyi is volt pontosan a jutalom?
+ * A sakktï¿½bla vï¿½zszintes koordinï¿½tï¿½i: A..H, fï¿½ggï¿½leges koordinï¿½tï¿½i: 1..8.
+ * Ciklusban kï¿½rjï¿½k be a felhasznï¿½lï¿½tï¿½l milyen koordinï¿½tï¿½ra kï¿½vï¿½ncsi, ï¿½s minden esetben ï¿½rjuk ki az eredmï¿½nyt! A programnak
+ * akkor legyen vï¿½ge, ha a bevitel vï¿½zszintes koordinï¿½tï¿½nï¿½l a * karaktert ï¿½tik be!
  */
 import extra.*;
 
@@ -16,7 +16,7 @@ public class Buzaszemek {
 		int sor;
 		while (oszlop!='*') {
 			do 
-				oszlop=Console.readChar("Melyik oszlop legyen A..H ( Kilépés--> * ):");
+				oszlop=Console.readChar("Melyik oszlop legyen A..H ( Kilï¿½pï¿½s--> * ):");
 			while ((Character.toUpperCase(oszlop)<'A' || Character.toUpperCase(oszlop)>'H') && (oszlop!='*'));
 			if (oszlop=='*') continue;
 			else {
@@ -24,10 +24,14 @@ public class Buzaszemek {
 					sor=Console.readInt("Melyik sor legyen (1..8)?");
 				while (sor<1 || sor>8);
 			buzaSzem=Math.pow(2, ((Character.toUpperCase(oszlop)-'A')*8)+sor-1);	
-			System.out.print("A(z) "+Character.toUpperCase(oszlop)+" sor "+sor+". oszlopában lévõ búzaszemek száma: ");
+			System.out.print("A(z) "+Character.toUpperCase(oszlop)+" sor "+sor+". oszlopï¿½ban lï¿½vï¿½ bï¿½zaszemek szï¿½ma: ");
 			System.out.printf("%,20.0f\n",buzaSzem);
 			}
 		}
-		System.out.println("Program vége!");
+		System.out.println("Program vï¿½ge!");
+		
+		
+		
+		
 	}
 }
