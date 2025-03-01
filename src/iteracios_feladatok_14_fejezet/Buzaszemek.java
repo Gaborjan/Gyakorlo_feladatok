@@ -30,7 +30,8 @@ public class Buzaszemek {
 		}
 		
 		System.out.println("Program v�ge!");
+	
 		
-			
+				
 	}
 } 
