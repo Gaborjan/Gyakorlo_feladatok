@@ -9,6 +9,7 @@ package iteracios_feladatok_14_fejezet;
  */
 import extra.*;
 
+
 public class Buzaszemek {
 	public static void main(String[] args) {
 		double buzaSzem;
